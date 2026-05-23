@@ -1,8 +1,9 @@
-import { ArrowRight, Play } from "lucide-react";
-import Pipeline from "@/components/Pipeline";
-import AIAgents from "@/components/AIAgents";
-import TechStack from "@/components/TechStack";
-import FinalCTA from "@/components/FinalCTA";
+import { ArrowRight, Play } from 'lucide-react';
+import Pipeline from '@/components/Pipeline';
+import AIAgents from '@/components/AIAgents';
+import TechStack from '@/components/TechStack';
+import FinalCTA from '@/components/FinalCTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-transparent to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="text-white">AI Team.</span>{" "}
+            <span className="text-white">AI Team.</span>{' '}
             <span className="text-primary">Không cần thuê dev.</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl mx-auto">
@@ -45,6 +46,7 @@ export default function Home() {
       <AIAgents />
       <TechStack />
       <FinalCTA />
+      <Footer />
     </main>
   );
 }
