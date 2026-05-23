@@ -1,4 +1,5 @@
 import { ArrowRight, Play } from "lucide-react";
+import Pipeline from "@/components/Pipeline";
 
 export default function Home() {
   return (
@@ -36,6 +37,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Pipeline />
     </main>
   );
 }
