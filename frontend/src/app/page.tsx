@@ -2,6 +2,7 @@ import { ArrowRight, Play } from "lucide-react";
 import Pipeline from "@/components/Pipeline";
 import AIAgents from "@/components/AIAgents";
 import TechStack from "@/components/TechStack";
+import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
       <Pipeline />
       <AIAgents />
       <TechStack />
+      <FinalCTA />
     </main>
   );
 }
