@@ -1,6 +1,7 @@
 import { ArrowRight, Play } from "lucide-react";
 import Pipeline from "@/components/Pipeline";
 import AIAgents from "@/components/AIAgents";
+import FeaturesSection from "@/components/FeaturesSection";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
 
       <Pipeline />
       <AIAgents />
+      <FeaturesSection />
     </main>
   );
 }
