@@ -1,14 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  MessageCircle,
-  Brain,
-  GitBranch,
-  Receipt,
-  Rocket,
-  Activity,
-} from "lucide-react";
+import { MessageCircle, Bot, GitBranch, Calculator, Rocket, Activity } from "lucide-react";
 
 const features = [
   {
@@ -17,7 +10,7 @@ const features = [
     description: "Toàn bộ quy trình qua Telegram, không cần app mới",
   },
   {
-    icon: Brain,
+    icon: Bot,
     title: "Không cần quản lý dev",
     description: "AI tự phân tích, code, test, deploy",
   },
@@ -27,7 +20,7 @@ const features = [
     description: "Tự động tạo repo, commit, pull request",
   },
   {
-    icon: Receipt,
+    icon: Calculator,
     title: "Estimate trước build",
     description: "Báo giá và thời gian trước khi build",
   },
@@ -45,10 +38,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section
-      id="features"
-      className="py-20 sm:py-28 bg-dark relative overflow-hidden"
-    >
+    <section id="features" className="py-20 sm:py-28 bg-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark-card/20 to-dark" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
@@ -58,8 +48,8 @@ export default function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4"
         >
-          <span className="text-white">Tự động hóa toàn bộ </span>
-          <span className="text-primary">quy trình phát triển phần mềm</span>
+          <span className="text-white">Tự động hóa toàn bộ quy trình </span>
+          <span className="text-primary">phát triển phần mềm</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -68,7 +58,7 @@ export default function FeaturesSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-slate-400 text-center text-lg mb-16 max-w-2xl mx-auto"
         >
-          AI team thay thế toàn bộ quy trình phát triển truyền thống
+          Mọi thứ được tự động hóa — từ ý tưởng đến sản phẩm hoàn chỉnh
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,16 +73,13 @@ export default function FeaturesSection() {
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary/50 transition-all duration-300">
-                  <feature.icon
-                    className="w-6 h-6 text-primary"
-                    strokeWidth={1.5}
-                  />
+                  <feature.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-primary transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-base text-slate-400 leading-relaxed">
+                  <p className="text-slate-400 text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
