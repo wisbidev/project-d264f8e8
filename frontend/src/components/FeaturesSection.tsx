@@ -27,7 +27,7 @@ const features = [
   {
     icon: Rocket,
     title: "Auto deploy",
-    description: "Deploy sau mỗi function hoàn thành",
+    description: "Deploy sau mỗi function hoàn thỉnh",
   },
   {
     icon: Activity,
